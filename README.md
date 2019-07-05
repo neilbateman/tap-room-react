@@ -17,7 +17,7 @@ A full simple application for react [material ui](https://material-ui.com/)
 - A docker container for production build
 - Created with [Create react app](https://github.com/facebook/create-react-app)
 
-![Dashboard](screenshot-dashboard.png)
+![Layout](IMG_20190705_165036898.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
