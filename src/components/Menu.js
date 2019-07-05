@@ -4,6 +4,10 @@ const Menu = [
     pathname: "/"
   },
   {
+    label: "Taps",
+    pathname: "/cards"
+  },
+  {
     label: "Dashboard",
     pathname: "/dashboard"
   },
@@ -15,16 +19,6 @@ const Menu = [
     label: "Wizard",
     pathname: "/wizard"
   },
-  {
-    label: "Cards",
-    pathname: "/cards"
-  },
-  {
-    label: "Github",
-    pathname: "https://github.com/alexanmtz/material-sense",
-    external: true
-  }
-
 ];
 
 export default Menu;

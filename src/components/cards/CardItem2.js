@@ -6,7 +6,7 @@ import Avatar from '@material-ui/core/Avatar';
 import DescriptionIcon from '@material-ui/icons/Description';
 import ButtonBar from '../buttons/ButtonBar';
 import Keg from '../Keg';
-import PropTypes from 'prop-types';
+import KegList from '../KegList';
 
 const styles = theme => ({
   paper: {
@@ -116,75 +116,24 @@ class CardItem extends Component {
     const { classes } = this.props;
 
     return (
-      <div>
-      {kegList.map((keg, index) =>
 
       <div className={classes.root}>
-        <Paper className={classes.paper}>
-          <div className={classes.itemContainer}>
-            <div className={classes.avatarContainer}>
-              <Avatar className={classes.avatar}>
-                <DescriptionIcon />
-              </Avatar>
-            </div>
-            <div className={classes.baseline}>
-              <div className={classes.inline}>
-                <Typography style={{ textTransform: 'uppercase' }} color='secondary' gutterBottom>
-                  Name
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  4 month(s)
-                </Typography>
-              </div>
-              <div className={classes.inline}>
-                <Typography style={{ textTransform: 'uppercase' }} color='secondary' gutterBottom>
-                  Colony-Forming-Units
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  4 month(s)
-                </Typography>
-              </div>
-              <div className={classes.inline}>
-                <Typography style={{ textTransform: 'uppercase' }} color='secondary' gutterBottom>
-                  Brand
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  01 February 2019
-                </Typography>
-              </div>
-              <div className={classes.inline}>
-                <Typography style={{ textTransform: 'uppercase' }} color='secondary' gutterBottom>
-                  Pints
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  500 Pints
-                </Typography>
-              </div>
-              <div className={classes.inline}>
-                <Typography style={{ textTransform: 'uppercase' }} color='secondary' gutterBottom>
-                  Price
-                </Typography>
-                <Typography variant="h6" gutterBottom>
-                  5000 USD
-                </Typography>
-              </div>
-            </div>
-            <div className={classes.inlineRight}>
-              <Typography style={{ textTransform: 'uppercase' }} color='secondary' gutterBottom>
-                Other Amount
-              </Typography>
-              <Typography variant="h4" gutterBottom>
-                Once a month
-              </Typography>
-              <ButtonBar />
-            </div>
-          </div>
+      <Paper className={classes.paper}>
+        {kegList.map((keg, index) =>
+          <Keg name = {keg.name}
+            cfu = {keg.cfu}
+            brand = {keg.brand}
+            pints = {keg.pints}
+            price = {keg.price}
+            key = {index}
+            />
+        )}
+
         </Paper>
       </div>
        )}
-    </div>
-    )
+
   }
-}
+
 
 export default withStyles(styles)(CardItem);

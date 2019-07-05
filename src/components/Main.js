@@ -8,7 +8,8 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import InstructionDialog from './dialogs/InstructionDialog';
 import SwipeDialog from './dialogs/SwipeDialog';
-
+import KegList from './KegList';
+import { Link } from 'react-router-dom';
 import Topbar from './Topbar';
 
 const backgroundShape = require('../images/shape.svg');
@@ -118,6 +119,7 @@ class Main extends Component {
   render() {
     const { classes } = this.props;
     return (
+
       <React.Fragment>
         <CssBaseline />
         <Topbar />
@@ -128,16 +130,16 @@ class Main extends Component {
                 <Paper className={classes.paper}>
                   <div className={classes.box}>
                     <Typography style={{textTransform: 'uppercase'}} color='secondary' gutterBottom>
-                      First title
+                      What is Kombucha Tea?
                     </Typography>
                     <Typography variant="body2" gutterBottom>
-                      A first title style <br/> with two lines
+                    It is a sweet-sour, fermented, acidic, slightly carbonated beverage, which has been described as either a wine that tastes like a delicious tea or an unusual tea that tastes like a rare wine.
                     </Typography>
                   </div>
                   <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                    <Button color='primary' variant="contained" className={classes.actionButtom}>
+                    <Link to="/article1">
                       Learn more
-                    </Button>
+                    </Link>
                   </div>
                 </Paper>
               </Grid>
@@ -145,16 +147,16 @@ class Main extends Component {
                 <Paper className={classes.paper}>
                   <div className={classes.box}>
                     <Typography style={{textTransform: 'uppercase'}} color='secondary' gutterBottom>
-                      Another box
+                    Eight potential benefits of kombucha
                     </Typography>
-                    <Typography variant="body1" gutterBottom>
-                      A default box
+                    <Typography variant="body2" gutterBottom>
+                      Kombucha is a sweet, fizzy drink made of yeast, sugar, and fermented tea with a number of potential health benefits, including gut health and liver function.
                     </Typography>
                   </div>
                   <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                    <Button color='primary' variant="contained" className={classes.actionButtom}>
-                      Learn more
-                    </Button>
+                  <Link to="/article2">
+                    Learn more
+                  </Link>
                   </div>
                 </Paper>
               </Grid>
@@ -162,16 +164,16 @@ class Main extends Component {
                 <Paper className={classes.paper}>
                   <div className={classes.box}>
                     <Typography style={{textTransform: 'uppercase'}} color='secondary' gutterBottom>
-                      A box with a carousel
+                      Booch Buiz
                     </Typography>
                     <Typography variant="body1" gutterBottom>
                       If you click in Getting Started, you will see a nice carousel
                     </Typography>
                   </div>
                   <div className={classes.alignRight}>
-                    <Button onClick={this.openDialog}  variant="outlined" className={classes.actionButtom}>
-                      Learn more
-                    </Button>
+                  <Link to="/article3">
+                    Learn more
+                  </Link>
                     <Button onClick={this.openGetStartedDialog} color='primary' variant="contained" className={classes.actionButtom}>
                       Dashboard
                     </Button>
@@ -187,13 +189,13 @@ class Main extends Component {
                             Full box
                           </Typography>
                           <Typography variant="body1" gutterBottom>
-                            This is an example of a full-width box
+                            Boochy Booch
                           </Typography>
                         </div>
                         <div className={classes.alignRight}>
-                          <Button color='primary' variant="contained" className={classes.actionButtom}>
-                            Learn more
-                          </Button>
+                        <Link to="/article4">
+                          Learn more
+                        </Link>
                         </div>
                       </div>
                     </Paper>
@@ -210,6 +212,7 @@ class Main extends Component {
           />
         </div>
       </React.Fragment>
+
     )
   }
 }

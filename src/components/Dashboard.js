@@ -116,7 +116,7 @@ class Dashboard extends Component {
 
   state = {
     loading: true,
-    amount: 15000,
+    amount: 1,
     period: 3,
     start: 0,
     monthlyInterest: 0,
@@ -180,9 +180,9 @@ class Dashboard extends Component {
               <Grid item xs={12}>
                 <div className={classes.topBar}>
                   <div className={classes.block}>
-                    <Typography variant="h6" gutterBottom>Dashboard</Typography>
+                    <Typography variant="h6" gutterBottom>Kombucha Order Page</Typography>
                     <Typography variant="body1">
-                      Adjust and play with our sliders.
+
                     </Typography>
                   </div>
                   <div>
@@ -196,34 +196,34 @@ class Dashboard extends Component {
                 <Paper className={classes.paper}>
                   <div>
                     <Typography variant="subtitle1" gutterBottom>
-                      How much you want to transfer
+                      Order some Kombucha
                     </Typography>
                     <Typography variant="body1">
                       Use slider to set the amount you need.
                     </Typography>
                     <div className={classes.blockCenter}>
                       <Typography color='secondary' variant="h6" gutterBottom>
-                        {numeral(amount).format()} USD
+                        {numeral(amount).format()} PINTS
                       </Typography>
                     </div>
                     <div>
                       <Slider
                         value={amount}
-                        min={20000}
-                        max={150000}
-                        step={15000}
+                        min={1}
+                        max={500}
+                        step={1}
                         onChange={this.handleChangeAmount}
                       />
                     </div>
                     <div className={classes.rangeLabel}>
                       <div>
                         <Typography variant="subtitle2">
-                          15,000 USD
+                          1 PINT
                         </Typography>
                       </div>
                       <div>
                         <Typography variant="subtitle2">
-                          150,000 USD
+                          500 PINTS
                         </Typography>
                       </div>
                     </div>
