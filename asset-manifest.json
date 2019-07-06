@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/neilbateman/tap-room-react/static/css/main.bda77fa2.chunk.css",
+    "main.js": "/neilbateman/tap-room-react/static/js/main.1dbc3c64.chunk.js",
+    "main.js.map": "/neilbateman/tap-room-react/static/js/main.1dbc3c64.chunk.js.map",
+    "runtime~main.js": "/neilbateman/tap-room-react/static/js/runtime~main.6ab245dd.js",
+    "runtime~main.js.map": "/neilbateman/tap-room-react/static/js/runtime~main.6ab245dd.js.map",
+    "static/js/2.6ed32ea3.chunk.js": "/neilbateman/tap-room-react/static/js/2.6ed32ea3.chunk.js",
+    "static/js/2.6ed32ea3.chunk.js.map": "/neilbateman/tap-room-react/static/js/2.6ed32ea3.chunk.js.map",
+    "index.html": "/neilbateman/tap-room-react/index.html",
+    "precache-manifest.78006e1bcde6a17d24659fb2ca8d6da4.js": "/neilbateman/tap-room-react/precache-manifest.78006e1bcde6a17d24659fb2ca8d6da4.js",
+    "service-worker.js": "/neilbateman/tap-room-react/service-worker.js",
+    "static/css/main.bda77fa2.chunk.css.map": "/neilbateman/tap-room-react/static/css/main.bda77fa2.chunk.css.map",
+    "static/media/logo.svg": "/neilbateman/tap-room-react/static/media/logo.ee7cd8ed.svg",
+    "static/media/shape.svg": "/neilbateman/tap-room-react/static/media/shape.43e76283.svg"
+  }
+}
