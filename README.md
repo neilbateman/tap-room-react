@@ -3,6 +3,7 @@
 
 ## Features
 - Responsive
+- Deployed at https://conf-komb.herokuapp.com
 
 ![Layout](IMG_20190705_165036898.jpg)
 
