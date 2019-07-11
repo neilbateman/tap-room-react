@@ -8,9 +8,10 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import InstructionDialog from './dialogs/InstructionDialog';
 import SwipeDialog from './dialogs/SwipeDialog';
-import KegList from './KegList';
+import {kegList} from '../KegList';
 import { Link } from 'react-router-dom';
 import Topbar from './Topbar';
+import AvailableKegs from './AvailableKegs';
 
 const backgroundShape = require('../images/shape.svg');
 
@@ -182,23 +183,7 @@ class Main extends Component {
               </Grid>
               <Grid container item xs={12}>
                   <Grid item xs={12}>
-                    <Paper className={classes.paper}>
-                      <div>
-                        <div className={classes.box}>
-                          <Typography color='secondary' gutterBottom>
-                            Full box
-                          </Typography>
-                          <Typography variant="body1" gutterBottom>
-                            Boochy Booch
-                          </Typography>
-                        </div>
-                        <div className={classes.alignRight}>
-                        <Link to="/article4">
-                          Learn more
-                        </Link>
-                        </div>
-                      </div>
-                    </Paper>
+                    <AvailableKegs/>
                 </Grid>
               </Grid>
             </Grid>

@@ -3,10 +3,11 @@ import withStyles from '@material-ui/styles/withStyles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import CardItem from './cards/CardItem';
-import CardItem2 from './cards/CardItem2';
+
 import Topbar from './Topbar';
 import SectionHeader from './typo/SectionHeader';
-import KegList from './KegList';
+import {kegList} from '../KegList';
+import AvailableKegs from './AvailableKegs';
 const backgroundShape = require('../images/shape.svg');
 
 const styles = theme => ({
@@ -41,7 +42,8 @@ class Cards extends Component {
             <Grid spacing={24} alignItems="center" justify="center" container className={classes.grid}>
               <Grid item xs={12}>
                 <SectionHeader title="Kombucha on Tap" subtitle="" />
-                <CardItem2 />
+                <AvailableKegs />
+                
 
               </Grid>
             </Grid>
