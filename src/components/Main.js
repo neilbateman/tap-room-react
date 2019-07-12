@@ -131,7 +131,7 @@ class Main extends Component {
                 <Paper className={classes.paper}>
                   <div className={classes.box}>
                     <Typography style={{textTransform: 'uppercase'}} color='secondary' gutterBottom>
-                      What is Kombucha Tea?
+                      What is Kombuchy Tea?
                     </Typography>
                     <Typography variant="body2" gutterBottom>
                     It is a sweet-sour, fermented, acidic, slightly carbonated beverage, which has been described as either a wine that tastes like a delicious tea or an unusual tea that tastes like a rare wine.
