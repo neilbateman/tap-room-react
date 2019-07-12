@@ -47,7 +47,7 @@ class Keg extends React.Component {
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography className={classes.heading} >{this.props.name}</Typography>
+        <Typography className={classes.heading} onClick={this.handleClick}>{this.props.name}</Typography>
         
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
