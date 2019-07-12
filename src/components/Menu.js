@@ -11,14 +11,14 @@ const Menu = [
     label: "Dashboard",
     pathname: "/dashboard"
   },
-  {
-    label: "Signup",
-    pathname: "/signup"
-  },
-  {
-    label: "Wizard",
-    pathname: "/wizard"
-  },
+  // {
+  //   label: "Signup",
+  //   pathname: "/signup"
+  // },
+  // {
+  //   label: "Wizard",
+  //   pathname: "/wizard"
+  // },
 ];
 
 export default Menu;

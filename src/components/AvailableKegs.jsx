@@ -19,11 +19,7 @@ export default class  AvailableKegs extends React.Component {
         {this.state.kegList.map((item, index)=>
           <Keg name={item.name}
               details={item.details}
-            // cfu={item.cfu}
-            // brand={item.brand}
-            // pints={item.pints}
-            // price={item.price}
-            key={index}
+              key={index}
           />
         )}
       </div>

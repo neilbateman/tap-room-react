@@ -2,8 +2,6 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
-import Paper from '@material-ui/core/Paper';
-import Card from '@material-ui/core/Card';
 
 class CountButtons extends React.Component {
     constructor(props) {

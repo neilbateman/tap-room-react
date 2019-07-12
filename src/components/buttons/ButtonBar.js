@@ -17,6 +17,23 @@ const styles = theme => ({
 
 class ButtonBar extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+        edit : false
+    };
+    this.editButton = this.editButton.bind(this);
+    
+}
+
+  editButton() {
+    let editButton = true;
+    this.setState({
+      edit: editButton
+    })
+
+  }  
+
   render() {
     const { classes } = this.props;
 
@@ -30,7 +47,7 @@ class ButtonBar extends Component {
         <Button
           variant="contained"
           color="primary"
-          className={classes.secondary}
+          className={classes.secondary} onClick={this.editButton}
         >
           Edit
         </Button>

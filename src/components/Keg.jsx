@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import KegName from './KegName';
-import { makeStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import CountButtons from './CountButtons';
+import CountButtons from './buttons/CountButtons';
 import withStyles from '@material-ui/styles/withStyles';
 import { withRouter } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
+import ButtonBar from './buttons/ButtonBar';
 
 
 const styles = theme => ({
@@ -56,7 +56,7 @@ class Keg extends React.Component {
         id="panel1a-header"
       >
         <Typography className={classes.heading} onClick={this.handleClick}>{this.props.name}</Typography>
-        
+       
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
         <Paper>
@@ -68,20 +68,16 @@ class Keg extends React.Component {
           )}
          
         </ul>
+        
         <CountButtons />
         </Paper>
       </ExpansionPanelDetails>
-     
+      <ButtonBar className={classes.heading}/>
       <button onClick={this.handleBuchClick}></button>
     </ExpansionPanel>
     );
   }
 }
-
-  
-
-
-
 
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
@@ -89,16 +85,3 @@ Keg.propTypes = {
 };
 
 export default withRouter(withStyles(styles)(Keg));
-
-
-
-// return(    
-//   <div>
-// <Paper>
-//   <h2>{props.brand} {props.name}</h2>
-//   <h3> Price: ${props.price} </h3>
-//   <h3>CFU {props.cfu}</h3>
-//   <h3>{props.pints} pints left</h3>
-// </Paper>
-//   </div>
-// );
