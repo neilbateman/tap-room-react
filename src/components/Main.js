@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import InstructionDialog from './dialogs/InstructionDialog';
 import SwipeDialog from './dialogs/SwipeDialog';
-import {kegList} from '../KegList';
+// import {kegList} from '../KegList';
 import { Link } from 'react-router-dom';
 import Topbar from './Topbar';
 import AvailableKegs from './AvailableKegs';

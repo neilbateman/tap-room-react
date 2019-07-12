@@ -5,7 +5,7 @@ import {kegList} from '../KegList';
 
 
 
-export default class  AvailableProduce extends React.Component {
+export default class  AvailableKegs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

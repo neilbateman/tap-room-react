@@ -10,6 +10,7 @@ import Buch1 from './components/articles/Buch1'
 import Buch2 from './components/articles/Buch2'
 import Buch3 from './components/articles/Buch3'
 import Buch4 from './components/articles/Buch4'
+import OrderForm from './components/OrderForm';
 
 
 export default props => (
@@ -25,6 +26,7 @@ export default props => (
           <Route exact path='/article2' component={ Buch2 } />
           <Route exact path='/article3' component={ Buch3 } />
           <Route exact path='/article4' component={ Buch4 } />
+          <Route exact path='/OrderForm' component={ OrderForm } />
 
         </Switch>
       </ScrollToTop>

@@ -43,8 +43,6 @@ class Cards extends Component {
               <Grid item xs={12}>
                 <SectionHeader title="Kombucha on Tap" subtitle="" />
                 <AvailableKegs />
-                
-
               </Grid>
             </Grid>
           </Grid>

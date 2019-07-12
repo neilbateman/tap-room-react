@@ -27,8 +27,10 @@ class Keg extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicked: false
+      clicked: false,
+      formVisible: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
@@ -39,6 +41,7 @@ class Keg extends React.Component {
   
   
   render(){
+
     const {classes} = this.props;
     return (
     <ExpansionPanel>
