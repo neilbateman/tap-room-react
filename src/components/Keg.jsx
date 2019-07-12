@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CountButtons from './CountButtons';
 import withStyles from '@material-ui/styles/withStyles';
 import { withRouter } from 'react-router-dom';
-
+import Paper from '@material-ui/core/Paper';
 
 
 const styles = theme => ({
@@ -28,16 +28,21 @@ class Keg extends React.Component {
     super(props);
     this.state = {
       clicked: false,
-      formVisible: false
+      formVisible: false,
+      currentBuch: 'Lemon Ginger'
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleBuchClick= this.handleClick.bind(this);
   }
 
   handleClick() {
     alert('Clickity');
   }
 
-
+  handleBuchClick(selectedBuch) {
+    this.setState({currentBuch: selectedBuch});
+    console.log(this.state.currentBuch)
+  }
   
   
   render(){
@@ -54,17 +59,20 @@ class Keg extends React.Component {
         
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
+        <Paper>
         <ul>
           {this.props.details.map((item, index)=>
             <KegName name={item}
               key={index}
             />
           )}
-
+         
         </ul>
-        
+        <CountButtons />
+        </Paper>
       </ExpansionPanelDetails>
-      <CountButtons />
+     
+      <button onClick={this.handleBuchClick}></button>
     </ExpansionPanel>
     );
   }
