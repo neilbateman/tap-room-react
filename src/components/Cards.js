@@ -6,7 +6,7 @@ import CardItem from './cards/CardItem';
 
 import Topbar from './Topbar';
 import SectionHeader from './typo/SectionHeader';
-import {kegList} from '../KegList';
+//import {kegList} from './common./KegList';
 import AvailableKegs from './AvailableKegs';
 const backgroundShape = require('../images/shape.svg');
 

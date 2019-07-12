@@ -6,7 +6,7 @@ import Avatar from '@material-ui/core/Avatar';
 import DescriptionIcon from '@material-ui/icons/Description';
 import ButtonBar from '../buttons/ButtonBar';
 import Keg from '../Keg';
-import KegList from '../KegList';
+//import KegList from './common/KegList';
 
 const styles = theme => ({
   paper: {
