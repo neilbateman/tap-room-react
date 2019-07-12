@@ -3,7 +3,7 @@
 
 ## Features
 - Responsive
-- Deployed at https://pure-eyrie-84258.herokuapp.com/#/cards
+- Deployed at https://pure-eyrie-84258.herokuapp.com
 
 ![Layout](ComponentTreePic.jpg)
 ![Layout](WireframePic.jpg)
