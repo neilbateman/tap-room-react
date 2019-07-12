@@ -13,6 +13,7 @@ class CountButtons extends React.Component {
         };
         this.upCount = this.upCount.bind(this);
         this.downCount = this.downCount.bind(this);
+        this.resetCount = this.resetCount.bind(this);
     }
 
     upCount() {
@@ -29,6 +30,15 @@ class CountButtons extends React.Component {
         })
     }
 
+
+    resetCount() {
+        let resetCount = 20
+        this.setState({
+            count: resetCount
+        })
+
+    }
+
     render() {
         return (
 
@@ -41,16 +51,13 @@ class CountButtons extends React.Component {
               size="small"
               aria-label="Large contained secondary button group"
             >
-              <Button onClick={this.upCount}>more</Button>
+              <Button onClick={this.upCount}>+</Button>
               
-              <Button onClick={this.downCount}>less</Button>
-              {/* <Button>Three</Button> */}
+              <Button onClick={this.downCount}>-</Button>
+              <Button onClick={this.resetCount}>reset</Button>
             </ButtonGroup>
             
           </Grid>
-                {/* <button onClick={this.upCount}>more</button>
-                <p>{this.state.count}</p>
-                <button onClick={this.downCount}>less</button> */}
             </div>
         );
     }

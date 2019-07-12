@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 export const kegList = [
   { name: 'Lemon Ginger',
   details: [
@@ -12,8 +9,8 @@ export const kegList = [
 },
 { name: 'Essence',
   details: [
-    'cfu :5',
-    'brand: Humm',
+    'cfu: 5',
+    'brand: GT enlightened Organic Raw Kombucha',
     'pints: 50',
     'price: 1'
   ]
@@ -21,7 +18,7 @@ export const kegList = [
 { name: 'Amaze',
   details: [
     'cfu :5',
-    'brand: Humm',
+    'brand: Dr. Tealixers Most Excelently Spectacular Bacterial Beverage',
     'pints: 50',
     'price: 1'
   ]
