@@ -5,8 +5,9 @@ import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
 import DescriptionIcon from '@material-ui/icons/Description';
 import ButtonBar from '../buttons/ButtonBar';
-import Keg from '../Keg';
-import PropTypes from 'prop-types';
+import Topbar from '../Topbar';
+
+
 
 const styles = theme => ({
   paper: {
@@ -72,43 +73,6 @@ const styles = theme => ({
   }
 })
 
-const kegList = [
-  {
-    name: 'Master Brew Kombucha',
-    cfu: 5,
-    brand: 'Kevita',
-    pints: 50,
-    price: 1
-  },
-  {
-    name: 'Lemon Ginver',
-    cfu: 5,
-    brand: 'Humm',
-    pints: 50,
-    price: 1
-  },
-  {
-    name: 'Botanic no 7',
-    cfu: 5,
-    brand: 'GT enlightened Organic Raw Kombucha',
-    pints: 50,
-    price: 1
-  },
-  {
-    name: 'Essence of Lemon',
-    cfu: 0,
-    brand: 'Kombucha Wonder Drink',
-    pints: 50,
-    price: 1
-  },
-  {
-    name: 'Dr. Marigold',
-    cfu: 5,
-    brand: 'Tealixir',
-    pints: 50,
-    price: 1
-  }
-];
 
 class CardItem extends Component {
 
@@ -117,8 +81,13 @@ class CardItem extends Component {
 
     return (
       <div>
-      {kegList.map((keg, index) =>
+      {/* {props.details.map((item, index)=>
+            <KegName name={item}
+              key={index}
+            />
+           */}
 
+<Topbar/>
       <div className={classes.root}>
         <Paper className={classes.paper}>
           <div className={classes.itemContainer}>
@@ -141,7 +110,7 @@ class CardItem extends Component {
                   Colony-Forming-Units
                 </Typography>
                 <Typography variant="h6" gutterBottom>
-                  4 month(s)
+                 50000000
                 </Typography>
               </div>
               <div className={classes.inline}>
@@ -181,7 +150,7 @@ class CardItem extends Component {
           </div>
         </Paper>
       </div>
-       )}
+       {/* )}, */}
     </div>
     )
   }

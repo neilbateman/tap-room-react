@@ -156,7 +156,7 @@ class Main extends Component {
                     </Typography>
                   </div>
                   <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                  <Link to="/article2">
+                  <Link to="/cardItem">
                     Learn more
                   </Link>
                   </div>
