@@ -3,7 +3,7 @@
 
 ## Features
 - Responsive
-- Deployed at https://conf-komb.herokuapp.com
+- Deployed at https://pure-eyrie-84258.herokuapp.com/#/cards
 
 ![Layout](ComponentTreePic.jpg)
 ![Layout](WireframePic.jpg)
