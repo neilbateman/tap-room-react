@@ -8,10 +8,12 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CountButtons from './CountButtons';
+import withStyles from '@material-ui/styles/withStyles';
+import { withRouter } from 'react-router-dom';
 
 
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     width: '100%',
   },
@@ -19,24 +21,38 @@ const useStyles = makeStyles(theme => ({
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
   },
-}));
+});
 
-function Keg(props){
+class Keg extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicked: false
+    };
+  }
 
-  const classes = useStyles();
-  return (
+  handleClick() {
+    alert('Clickity');
+  }
+
+
+  
+  
+  render(){
+    const {classes} = this.props;
+    return (
     <ExpansionPanel>
       <ExpansionPanelSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography className={classes.heading}>{props.name}</Typography>
+        <Typography className={classes.heading} >{this.props.name}</Typography>
         
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
         <ul>
-          {props.details.map((item, index)=>
+          {this.props.details.map((item, index)=>
             <KegName name={item}
               key={index}
             />
@@ -47,21 +63,22 @@ function Keg(props){
       </ExpansionPanelDetails>
       <CountButtons />
     </ExpansionPanel>
-  );
+    );
+  }
 }
+
+  
+
+
 
 
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
   details: PropTypes.array,
-  // cfu: PropTypes.number.isRequired,
-  // brand: PropTypes.string,
-  // price: PropTypes.number.isRequired,
-  // pints: PropTypes.number.isRequired
 };
 
+export default withRouter(withStyles(styles)(Keg));
 
-export default Keg;
 
 
 // return(    
