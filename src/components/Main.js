@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import Topbar from './Topbar';
 import AvailableKegs from './AvailableKegs';
 
-const backgroundShape = require('../images/shape.svg');
+const backgroundShape = require('../images/conf2.jpg');
 
 const styles = theme => ({
   root: {
@@ -22,7 +22,7 @@ const styles = theme => ({
     overflow: 'hidden',
     background: `url(${backgroundShape}) no-repeat`,
     backgroundSize: 'cover',
-    backgroundPosition: '0 400px',
+    // backgroundPosition: '0 400px',
     paddingBottom: 200
   },
   grid: {

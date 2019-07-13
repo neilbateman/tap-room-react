@@ -8,7 +8,8 @@ import AvailableKegs from './AvailableKegs';
 
 
 
-const backgroundShape = require('../images/shape.svg');
+
+const backgroundShape = require('../images/conf2.jpg');
 
 const styles = theme => ({
   root: {
@@ -17,13 +18,13 @@ const styles = theme => ({
     overflow: 'hidden',
     background: `url(${backgroundShape}) no-repeat`,
     backgroundSize: 'cover',
-    backgroundPosition: '0 400px',
-    marginTop: 20,
-    padding: 20,
+    // backgroundPosition: '0 400px',
+    // marginTop: 20,
+    // padding: 20,
     paddingBottom: 200
   },
   grid: {
-    width: 1000
+    width: 1200
   }
 })
 
